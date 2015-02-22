@@ -27,10 +27,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## run_analysis.R walkthrough
 
-* Step 0: Download and unzip data
-* Step 1: Read data from the files into the variables
-* Step 2: Merge data sets to create one merged dataset
-* Step 3: Extract2 only the measurements on the mean and standard deviation for each measurement
-* Step 4: Use descriptive activity names to name the activities in the data set
-* Step 5: Appropriately label the data set with descriptive variable names
-* Step 6: Creating the tidy dataset "tidydata.txt"
+* Step 0: Download and unzip data. Read data from the files into the variables
+* Step 1: Merge data sets to create one merged dataset
+* Step 2: Extract2 only the measurements on the mean and standard deviation for each measurement
+* Step 3: Use descriptive activity names to name the activities in the data set
+* Step 4: Appropriately label the data set with descriptive variable names
+* Step 5: Creating the tidy dataset "tidydata.txt"

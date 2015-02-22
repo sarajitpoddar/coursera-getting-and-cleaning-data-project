@@ -42,7 +42,7 @@
 
 
 #--------------------------------------
-## step 0: Download and unzip data
+## step 0.1: Download and unzip data
 #--------------------------------------
 # Download the data 
 if(!file.exists("./data")){dir.create("./data")}
@@ -57,7 +57,7 @@ path_rf <- file.path("./data" , "UCI HAR Dataset")
 files <- list.files(path_rf, recursive=TRUE)
 
 #--------------------------------------
-## step 1: Read data 
+## step 0.2: Read data 
 #--------------------------------------
 # Read data from the files into the variables
 
@@ -75,7 +75,7 @@ dataFeaturesTrain <- read.table(file.path(path_rf, "train", "X_train.txt"),heade
 
 
 #--------------------------------------
-## step 2: Merge data sets to create one
+## step 1: Merge data sets to create one
 #--------------------------------------
 # Merge the training and the test sets to create one data set
 
@@ -95,7 +95,7 @@ dataCombine <- cbind(dataSubject, dataActivity)
 Data <- cbind(dataFeatures, dataCombine)
 
 #--------------------------------------
-## step 3: Mean and standard deviation 
+## step 2: Mean and standard deviation 
 #--------------------------------------
 # Extract only the measurements on the mean and standard deviation for each measurement
 
@@ -107,7 +107,7 @@ selectedNames<-c(as.character(subdataFeaturesNames), "subject", "activity" )
 Data<-subset(Data,select=selectedNames)
 
 #--------------------------------------
-## step 4: Rename activities
+## step 3: Rename activities
 #--------------------------------------
 # Use descriptive activity names to name the activities in the data set
 
@@ -115,7 +115,7 @@ Data<-subset(Data,select=selectedNames)
 activityLabels <- read.table(file.path(path_rf, "activity_labels.txt"),header = FALSE)
 
 #--------------------------------------
-## step 5: Appropriately label data
+## step 4: Appropriately label data
 #--------------------------------------
 # Appropriately label the data set with descriptive variable names
 ## In the former part, variables activity and subject and names of the activities 
@@ -137,7 +137,7 @@ names(Data)<-gsub("Mag", "Magnitude", names(Data))
 names(Data)<-gsub("BodyBody", "Body", names(Data))
 
 #--------------------------------------
-## Step 6: Creating the tidy dataset
+## Step 5: Creating the tidy dataset
 #--------------------------------------
 # Creates a second,independent tidy data set and ouput it
 library(plyr);
