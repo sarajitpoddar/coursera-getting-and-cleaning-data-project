@@ -49,16 +49,16 @@ The following files are available for the train and test data. Their description
 
 ### Signals
 
-The 3-axial time domain [[5](#time-domain)] signals from accelerometer and gyroscope
-were captured at a constant rate of 50 Hz [[6](#hertz)]. Then they were filtered
+The 3-axial time domain signals from accelerometer and gyroscope
+were captured at a constant rate of 50 Hz. Then they were filtered
 to remove noise.
 Similarly, the acceleration signal was then separated into body and gravity
 acceleration signals using another filter.
 Subsequently, the body linear acceleration and angular velocity were derived in time
-to obtain Jerk signals [[7](#jerk)]. Also the magnitude [[8](#magnitude)] of these
-three-dimensional signals were calculated using the Euclidean norm [[9](#euclidean-norm)]. 
-Finally a Fast Fourier Transform (FFT) [[10](#fft)] was applied to some of these
-time domain signals to obtain frequency domain [[11](#freq-domain)] signals.
+to obtain Jerk signals . Also the magnitude of these
+three-dimensional signals were calculated using the Euclidean norm. 
+Finally a Fast Fourier Transform (FFT)was applied to some of these
+time domain signals to obtain frequency domain signals.
 
 The signals were sampled in fixed-width sliding windows of 2.56 sec and 50% 
 overlap (128 readings/window at 50 Hz).
