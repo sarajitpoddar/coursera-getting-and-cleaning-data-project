@@ -13,31 +13,24 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
  You should create one R script called run_analysis.R that does the following. 
 
-    * Merges the training and the test sets to create one data set.
-    * Extracts only the measurements on the mean and standard deviation for each measurement. 
-    * Uses descriptive activity names to name the activities in the data set
-    * Appropriately labels the data set with descriptive variable names. 
-    * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement. 
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names. 
+* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Files in this repo
 
-    * README.md -- you are reading it right now
-    * CodeBook.md -- codebook describing variables, the data and transformations
-    * run_analysis.R -- actual R code
+* README.md -- you are reading it right now
+* CodeBook.md -- codebook describing variables, the data and transformations
+* run_analysis.R -- actual R code
 
 ## run_analysis.R walkthrough
 
-    Step 0: Download and unzip data
-
-    Step 1: Read data from the files into the variables
-
-    Step 2: Merge data sets to create one merged dataset
-
-    Step 3: Extract2 only the measurements on the mean and standard deviation for each measurement
-
-    Step 4: Use descriptive activity names to name the activities in the data set
-
-    Step 5: Appropriately label the data set with descriptive variable names
-    
-    Step 6: Creating the tidy dataset "tidydata.txt"
-
+* Step 0: Download and unzip data
+* Step 1: Read data from the files into the variables
+* Step 2: Merge data sets to create one merged dataset
+* Step 3: Extract2 only the measurements on the mean and standard deviation for each measurement
+* Step 4: Use descriptive activity names to name the activities in the data set
+* Step 5: Appropriately label the data set with descriptive variable names
+* Step 6: Creating the tidy dataset "tidydata.txt"
