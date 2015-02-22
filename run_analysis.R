@@ -97,7 +97,7 @@ Data <- cbind(dataFeatures, dataCombine)
 #--------------------------------------
 ## step 3: Mean and standard deviation 
 #--------------------------------------
-# Extracts only the measurements on the mean and standard deviation for each measurement
+# Extract only the measurements on the mean and standard deviation for each measurement
 
 ## Subset Name of Features by measurements on the mean and standard deviation
 subdataFeaturesNames<-dataFeaturesNames$V2[grep("mean\\(\\)|std\\(\\)", dataFeaturesNames$V2)]
@@ -109,7 +109,7 @@ Data<-subset(Data,select=selectedNames)
 #--------------------------------------
 ## step 4: Rename activities
 #--------------------------------------
-# Uses descriptive activity names to name the activities in the data set
+# Use descriptive activity names to name the activities in the data set
 
 ## Read descriptive activity names from “activity_labels.txt”
 activityLabels <- read.table(file.path(path_rf, "activity_labels.txt"),header = FALSE)
